@@ -1,0 +1,28 @@
+/* SearchBox.css */
+
+.SearchBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 16px auto;
+  max-width: 400px;
+}
+
+.SearchBox input[type="text"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.SearchBox input[type="text"]:focus {
+  border-color: #007bff;
+  outline: none;
+}

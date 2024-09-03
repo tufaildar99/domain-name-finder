@@ -1,0 +1,26 @@
+/* ResultContainer.css */
+
+.result-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  padding: 16px;
+}
+
+.result-container > * {
+  flex: 1 1 calc(33.333% - 32px);
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .result-container > * {
+    flex: 1 1 calc(50% - 32px);
+  }
+}
+
+@media (max-width: 480px) {
+  .result-container > * {
+    flex: 1 1 100%;
+  }
+}
